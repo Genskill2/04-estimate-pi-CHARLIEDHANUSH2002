@@ -5,6 +5,15 @@
 
 float wallis_pi(int);
 
+float wallis_pi(int n){
+    float ans = 2;
+    for(float i=1;i<=n;i++){
+        ans *= (4*i*i)/(4*i*i - 1);
+    }
+    return ans;
+    
+    
+}
 int main(void) {
   float pi;
   for (int i=0; i<5; i++) {
@@ -23,4 +32,3 @@ int main(void) {
     }
   }
 }
-
